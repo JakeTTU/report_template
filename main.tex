@@ -1,0 +1,40 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx} % For including images
+\usepackage{fancyhdr} % For custom headers
+\usepackage{helvet} % For Helvetica font
+\usepackage{lipsum} % For dummy text
+\usepackage{float} % To position the logo precisely
+\usepackage{setspace} % For line spacing
+\usepackage{titlesec} % For customizing section titles
+\usepackage{blindtext} % For dummy text
+\usepackage{tikz} % For creating graphics and diagrams in LaTeX documents.
+\usepackage{wrapfig} % For wrapping text around figures
+\usepackage{floatrow} % For wrapping text around figures
+\usepackage[margin=2cm, top=3cm, bottom=3cm]{geometry} % Set margins
+\usepackage{subcaption} % For subfigures
+\usepackage{tocloft} % For customizing the table of contents
+
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\familydefault}{\sfdefault}
+
+\input{info.tex}
+\input{header.tex}
+
+% Customizing section titles
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.5em}{}
+
+\begin{document}
+
+\input{title_page}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\input{body}
+
+
+\end{document}
